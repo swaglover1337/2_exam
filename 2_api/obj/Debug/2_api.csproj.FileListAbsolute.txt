@@ -1,0 +1,16 @@
+D:\VS\2_api\obj\Debug\2_api.csproj.AssemblyReference.cache
+D:\VS\2_api\obj\Debug\MainWindow.g.cs
+D:\VS\2_api\obj\Debug\App.g.cs
+D:\VS\2_api\obj\Debug\2_api_MarkupCompile.cache
+D:\VS\2_api\obj\Debug\2_api_MarkupCompile.lref
+D:\VS\2_api\bin\Debug\2_api.exe.config
+D:\VS\2_api\bin\Debug\2_api.exe
+D:\VS\2_api\bin\Debug\2_api.pdb
+D:\VS\2_api\obj\Debug\MainWindow.baml
+D:\VS\2_api\obj\Debug\2_api.g.resources
+D:\VS\2_api\obj\Debug\_2_api.Properties.Resources.resources
+D:\VS\2_api\obj\Debug\2_api.csproj.GenerateResource.cache
+D:\VS\2_api\obj\Debug\2_api.csproj.CoreCompileInputs.cache
+D:\VS\2_api\obj\Debug\2_api.exe
+D:\VS\2_api\obj\Debug\2_api.pdb
+D:\VS\2_api\obj\Debug\2_api.exe.config

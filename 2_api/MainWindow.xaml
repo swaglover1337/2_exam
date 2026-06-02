@@ -1,0 +1,28 @@
+﻿<Window x:Class="_2_api.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2_api"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+    
+        
+        <StackPanel Orientation="Horizontal" Margin="10" VerticalAlignment="Top">
+            <Button Content="Получить данные" Width="150" Height="50"
+                    Name="GetData" Click="GetData_Click"/>
+            <TextBox Name="GetApi"  Width="200" Height="50"/>
+           
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Button Content="Проверить данные" Width="150" Height="50"
+        Name="CheckData" Click="CheckData_Click"/>
+            <TextBox Name="SendApi" Width="200" Height="50"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
