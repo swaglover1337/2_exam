@@ -1,0 +1,44 @@
+﻿<Page x:Class="_2_exam.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_2_exam"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Страница администратора"
+      Background="White" MaxHeight="500" MaxWidth="800">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <TextBlock Text="Панель администратора" FontSize="18" FontWeight="Bold" VerticalAlignment="Center"/>
+            <Button Content="Выйти" Click="LogoutButton_Click" HorizontalAlignment="Right" Padding="10,5"/>
+        </Grid>
+
+        <DataGrid Name="UsersDataGrid" Grid.Row="1" Margin="15" AutoGenerateColumns="False" CanUserAddRows="False" SelectionChanged="UsersDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Login}" Width="*"/>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Password}" Width="*"/>
+                <DataGridCheckBoxColumn Header="Админ" Binding="{Binding IsAdmin}" Width="Auto"/>
+                <DataGridCheckBoxColumn Header="Заблокирован" Binding="{Binding IsBlocked}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBox Name="AdminLoginBox" Width="100" Margin="5" ToolTip="Логин"/>
+            <TextBox Name="AdminPasswordBox" Width="100" Margin="5" ToolTip="Пароль"/>
+            <CheckBox Name="AdminIsAdminCheck" Content="Админ" VerticalAlignment="Center" Margin="5"/>
+            <Button Content="Добавить" Margin="5" Padding="2"/>
+            <Button Content="Изменить" Margin="5" Padding="2"/>
+            <Button Content="Разблокировать" Click="UnlockButton_Click" Margin="5" Padding="2" Background="LightGreen"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
